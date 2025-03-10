@@ -34,6 +34,24 @@ Sistema de inventario en C con SQLite, enfocado en eficiencia y migraciones de d
    ./inventary
    ```
 
+## Termux
+
+1. Instala el paquete
+   ```pkg install binutils-is-llvm```
+
+2. Compila las librería sqlite3
+   ```gcc -c lib/sqlite3.c -o lib/sqlite3.o && ar rcs lib/libsqlite3.a lib/sqlite3.o;```
+
+4. Compila el código fuente:
+   ```sh
+   gcc -I./include main.c commands/add_inventary.c commands/view_inventary.c commands/migrate_db.c commands/delete_product.c -L./lib -lsqlite3 -o inventary && ./inventary
+   ```
+
+3. Ejecuta el programa:
+   ```sh
+   ./inventary
+   ```
+
 ## Uso
 
 El programa mostrará un menú con las siguientes opciones:
@@ -72,4 +90,7 @@ El programa mostrará un menú con las siguientes opciones:
 ## Licencia
 
 Este proyecto está bajo la licencia Apache. Puedes consultar el archivo [LICENSE](LICENSE) para más detalles.
+
+
+
 
