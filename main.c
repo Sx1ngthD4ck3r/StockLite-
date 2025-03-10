@@ -75,6 +75,6 @@ int main()
 
     } while (option != 6);
 
-    getch();
+    //getch();
     return 0;
 }
