@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <sqlite3.h>
 #include <unistd.h>
 #include "commands/command.h"
