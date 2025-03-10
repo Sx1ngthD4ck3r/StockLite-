@@ -34,7 +34,7 @@ Sistema de inventario en C con SQLite, enfocado en eficiencia y migraciones de d
    ./inventary
    ```
 
-## Termux
+## Instalación-Termux
 
 1. Instala el paquete
    ```pkg install binutils-is-llvm```
@@ -44,10 +44,10 @@ Sistema de inventario en C con SQLite, enfocado en eficiencia y migraciones de d
 
 4. Compila el código fuente:
    ```sh
-   gcc -I./include main.c commands/add_inventary.c commands/view_inventary.c commands/migrate_db.c commands/delete_product.c -L./lib -lsqlite3 -o inventary && ./inventary
+   gcc -I./include main.c commands/add_inventary.c commands/view_inventary.c commands/migrate_db.c commands/delete_product.c -L./lib -lsqlite3 -o inventary
    ```
 
-3. Ejecuta el programa:
+5. Ejecuta el programa:
    ```sh
    ./inventary
    ```
