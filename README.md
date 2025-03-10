@@ -37,10 +37,14 @@ Sistema de inventario en C con SQLite, enfocado en eficiencia y migraciones de d
 ## Instalación-Termux
 
 1. Instala el paquete
-   ```pkg install binutils-is-llvm```
+   ```sh
+   pkg install binutils-is-llvm
+   ```
 
-2. Compila las librería sqlite3
-   ```gcc -c lib/sqlite3.c -o lib/sqlite3.o && ar rcs lib/libsqlite3.a lib/sqlite3.o;```
+3. Compila las librería sqlite3
+   ```sh
+   gcc -c lib/sqlite3.c -o lib/sqlite3.o && ar rcs lib/libsqlite3.a lib/sqlite3.o;
+   ```
 
 4. Compila el código fuente:
    ```sh
